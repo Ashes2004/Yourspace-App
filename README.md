@@ -3,7 +3,7 @@
 Yourspace is a social media app built with [Expo](https://expo.dev) and React Native. It features Firebase authentication, Cloudinary for storage, MongoDB as the database, and a Node.js + Express backend.
 
 ## Backend Repository
-Find the backend repository for this project here: [Yourspace Backend]([<insert-backend-repo-link>](https://github.com/Ashes2004/yourspace-backend)).
+Find the backend repository for this project here: [Yourspace Backend](https://github.com/Ashes2004/yourspace-backend).
 
 ---
 
