@@ -1,44 +1,36 @@
-# Welcome to yourspace app 👋
+# Welcome to Yourspace App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Yourspace is a social media app built with [Expo](https://expo.dev) and React Native. It features Firebase authentication, Cloudinary for storage, MongoDB as the database, and a Node.js + Express backend.
 
-## Get started
+## Backend Repository
+Find the backend repository for this project here: [Yourspace Backend](<insert-backend-repo-link>).
 
-1. Install dependencies
+---
+
+## Features
+
+- **Firebase Authentication**: Secure and easy login/register functionality.
+- **Cloudinary Integration**: Efficient media storage and delivery for images and videos.
+- **MongoDB Database**: A reliable NoSQL database for managing user data.
+- **Express.js Backend**: Provides the server-side logic and APIs.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js installed on your machine.
+- MongoDB database (local or hosted, e.g., MongoDB Atlas).
+- Cloudinary account for media storage.
+- Firebase project setup for authentication.
+
+---
+
+### Installation
+
+1. Clone the repository:
 
    ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   git clone <repo-url>
+   cd yourspace-app
