@@ -49,7 +49,7 @@ const OtherProfile = () => {
 
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user/mail",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/mail",
         {
           method: "POST",
           headers: {
@@ -84,7 +84,7 @@ const OtherProfile = () => {
 
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user/follow",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/follow",
         {
           method: "POST",
           headers: {
@@ -98,7 +98,7 @@ const OtherProfile = () => {
         const updatedUser = await response.json();
 
         const notification = await fetch(
-          "https://your-backend-api.com/api/notification",
+          "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/notification",
           {
             method: "POST",
             headers: {
@@ -133,7 +133,7 @@ const OtherProfile = () => {
 
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user/unfollow",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/unfollow",
         {
           method: "POST",
           headers: {

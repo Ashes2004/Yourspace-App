@@ -11,7 +11,7 @@ const UserSearch = () => {
 
     const fetchUsers = async () => {
       try {
-        const response = await fetch("https://your-backend-api.com/api/user"); 
+        const response = await fetch("https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user"); 
         const data = await response.json();
         setUsers(data);
       } catch (error) {

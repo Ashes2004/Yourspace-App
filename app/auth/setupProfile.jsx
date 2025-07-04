@@ -19,8 +19,8 @@ const ProfileSetup = () => {
   const [profileImage, setProfileImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const CLOUDINARY_URL = 'your assest url ';
-  const CLOUDINARY_UPLOAD_PRESET = 'add your preset name here';
+  const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/depjvihmd/image/upload';
+  const CLOUDINARY_UPLOAD_PRESET = 'yourspace-user';
   const router = useRouter();
 
   const pickImage = async () => {
@@ -94,7 +94,7 @@ const ProfileSetup = () => {
         }
 
         const response = await fetch(
-          'https://your-backend-api.com/api/user/update',
+          'https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/update',
           {
             method: 'PATCH',
             headers: {

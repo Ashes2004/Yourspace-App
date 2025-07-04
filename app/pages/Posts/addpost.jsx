@@ -15,8 +15,8 @@ import { Video } from 'expo-av';
 import { useRouter } from 'expo-router';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const CLOUDINARY_URL = 'your cloudinary url'; 
-const CLOUDINARY_UPLOAD_PRESET = 'add preset name'; 
+const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/depjvihmd/upload'; 
+const CLOUDINARY_UPLOAD_PRESET = 'yourspace-user'; 
 
 const AddPost = () => {
   const [caption, setCaption] = useState('');
@@ -25,7 +25,7 @@ const AddPost = () => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  
+  // Function to handle media picking
   const pickMedia = async () => {
     const permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync();
     if (!permissionResult.granted) {
@@ -46,6 +46,7 @@ const AddPost = () => {
     }
   };
 
+  // Function to upload media to Cloudinary
   const uploadMediaToCloudinary = async (uri) => {
     const data = new FormData();
     data.append('file', {
@@ -98,7 +99,7 @@ const AddPost = () => {
           return;
         }
 
-        const response = await fetch('https://your-backend-api.com/api/Post', {
+        const response = await fetch('https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/Post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

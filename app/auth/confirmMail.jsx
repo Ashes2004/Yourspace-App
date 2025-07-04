@@ -45,7 +45,7 @@ const Verification = () => {
       if (auth.currentUser?.emailVerified) {
         if (email) {
          
-          const createUserResponse = await fetch("https://your-backend-api.com/api/user", {
+          const createUserResponse = await fetch("https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

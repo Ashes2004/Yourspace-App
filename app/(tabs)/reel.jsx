@@ -59,7 +59,7 @@ const HorizontalSlider = () => {
         setUserEmail(email);
 
         const response = await fetch(
-          "https://your-backend-api.com/api/post"
+          "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post"
         );
         const data = await response.json();
 
@@ -123,7 +123,7 @@ const HorizontalSlider = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${id}/like`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${id}/like`,
         {
           method: "POST",
           headers: {
@@ -142,7 +142,7 @@ const HorizontalSlider = () => {
          if(resp.User != User)
           {
          const notification = await fetch(
-          "https://your-backend-api.com/api/notification",
+          "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/notification",
           {
             method: "POST",
             headers: {
@@ -181,7 +181,7 @@ const HorizontalSlider = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${id}/unlike`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${id}/unlike`,
         {
           method: "POST",
           headers: {

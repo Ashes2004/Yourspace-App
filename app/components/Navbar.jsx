@@ -14,7 +14,7 @@ const Navbar = () => {
       try {
         const userId = await AsyncStorage.getItem('UserId');
         const response = await fetch(
-          "https://your-backend-api.com/api/notification"
+          "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/notification"
         );
         const responseData = await response.json();
         if (responseData.success && Array.isArray(responseData.data)) {

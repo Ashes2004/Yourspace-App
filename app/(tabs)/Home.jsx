@@ -42,7 +42,7 @@ const Home = () => {
     const email = await AsyncStorage.getItem("Email");
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user/mail",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/mail",
         {
           method: "POST",
           headers: {
@@ -70,7 +70,7 @@ const Home = () => {
     if (isOffline) return;
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/post"
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post"
       );
       const data = await response.json();
       const formattedPosts = data.map((post) => ({
@@ -89,6 +89,8 @@ const Home = () => {
       }));
       setPosts(formattedPosts);
     } catch (error) {
+      alert("Unable to fetch posts");
+      setLoading(false);
       console.error("Error fetching posts:", error);
     } finally {
       setLoading(false);
@@ -178,7 +180,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${id}/like`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${id}/like`,
         {
           method: "POST",
           headers: {
@@ -197,7 +199,7 @@ const Home = () => {
 
         if (resp.User != User) {
           const notification = await fetch(
-            "https://your-backend-api.com/api/notification",
+            "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/notification",
             {
               method: "POST",
               headers: {
@@ -232,7 +234,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${id}/unlike`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${id}/unlike`,
         {
           method: "POST",
           headers: {
@@ -262,7 +264,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${selectedPost._id}/comment`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${selectedPost._id}/comment`,
         {
           method: "POST",
           headers: {
@@ -282,7 +284,7 @@ const Home = () => {
         console.log(User);
         if (resp.User != User) {
           const notification = await fetch(
-            "https://your-backend-api.com/api/notification",
+            "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/notification",
             {
               method: "POST",
               headers: {
@@ -313,7 +315,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${selectedPost._id}/comments/${id}`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${selectedPost._id}/comments/${id}`,
         { method: "DELETE" }
       );
       fetchPostData(selectedPost);
@@ -331,7 +333,7 @@ const Home = () => {
       const postID = post._id ? post._id : post.id;
 
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${postID}`
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${postID}`
       );
 
       if (response.ok) {

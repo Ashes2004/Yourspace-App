@@ -34,7 +34,7 @@ const ViewPost = () => {
         setUserId(storedUserId);
 
         const response = await fetch(
-          `https://your-backend-api.com/api/post/${viewPost}`,
+          `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${viewPost}`,
           {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
@@ -62,7 +62,7 @@ const ViewPost = () => {
     if (!post) return;
     try {
       const response = await fetch(
-        `https://your-backend-api.com/api/post/${post._id}`,
+        `https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/post/${post._id}`,
         { method: 'DELETE' }
       );
 

@@ -15,7 +15,7 @@ const FollowersFollowingPage = () => {
   const fetchUserData = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://your-backend-api.com/api/user/mail', {
+      const response = await fetch('https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/mail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),

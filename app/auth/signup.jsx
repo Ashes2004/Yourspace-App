@@ -34,7 +34,7 @@ const Signup = () => {
 
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user",
         {
           method: "GET",
           headers: {

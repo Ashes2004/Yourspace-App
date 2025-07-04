@@ -31,7 +31,7 @@ const Profile = () => {
 
     try {
       const response = await fetch(
-        "https://your-backend-api.com/api/user/mail",
+        "https://shrill-leisha-ashesdas-ddfe2c0a.koyeb.app/api/user/mail",
         {
           method: "POST",
           headers: {
