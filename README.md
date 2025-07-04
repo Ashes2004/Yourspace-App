@@ -70,7 +70,7 @@ Find the backend repository for this project here: [Yourspace Backend](https://g
 
 Ready to experience Yourspace? Download the APK and try out the current features:
 
-👉 [**Download Yourspace APK**](yourspace.apk)
+👉 [**Download Yourspace APK**]('https://yourspace-app.netlify.app')
 
 *Compatible with Android 7.0 and above*
 
